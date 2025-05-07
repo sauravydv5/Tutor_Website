@@ -13,7 +13,7 @@ const App = () => {
     <div data-aos="fade-up">
       <Navbar />
       <Routes>
-        <Route path="/Header" element={<Header />} />
+        <Route path="/" element={<Header />} />
         <Route path="/course" element={<Course />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/contact" element={<Contact />} />
