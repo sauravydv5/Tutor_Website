@@ -1,0 +1,118 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    color: #cee1e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0 20px;
+}
+
+.content p {
+    padding-top: 30px;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.rating {
+    font-size: 18px;
+}
+
+.btn1,
+.btn2 {
+    margin-top: 30px;
+    padding: 15px 45px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn1:hover {
+    background-color: #cbc2c2;
+    color: rgb(16, 16, 137);
+}
+
+.btn2 {
+    margin-top: 100px;
+}
+
+/* =================== Responsive Styles =================== */
+
+@media (max-width: 1024px) {
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 18px;
+        padding: 12px 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-top: 80px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+}
